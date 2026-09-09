@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#0c0e11"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  
+  <!-- Header Bar -->
+  <rect x="25" y="25" width="750" height="42" rx="8" fill="#14181c" stroke="rgba(255,255,255,0.08)"/>
+  <circle cx="48" cy="46" r="4" fill="#7fd99a"/>
+  <text x="62" y="50" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">WERTE PLATFORM · K8S MODULAR MONOLITH ARCHITECTURE</text>
+  <rect x="640" y="34" width="120" height="24" rx="12" fill="rgba(127,217,154,0.15)" stroke="#7fd99a" stroke-width="0.8"/>
+  <text x="700" y="50" text-anchor="middle" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">25 MODULES</text>
+
+  <!-- Ingress Layer -->
+  <rect x="40" y="95" width="150" height="175" rx="10" fill="#13161a" stroke="#232a31"/>
+  <text x="55" y="125" fill="#7fd99a" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">CLIENT GATEWAY</text>
+  <rect x="55" y="140" width="120" height="28" rx="6" fill="#1b2026" stroke="rgba(255,255,255,0.05)"/>
+  <text x="115" y="158" text-anchor="middle" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="10">Customer Mobile</text>
+  <rect x="55" y="175" width="120" height="28" rx="6" fill="#1b2026" stroke="rgba(255,255,255,0.05)"/>
+  <text x="115" y="193" text-anchor="middle" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="10">Rider Dispatch</text>
+  <rect x="55" y="210" width="120" height="28" rx="6" fill="#1b2026" stroke="rgba(255,255,255,0.05)"/>
+  <text x="115" y="228" text-anchor="middle" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="10">Merchant Web</text>
+
+  <!-- Connection line -->
+  <path d="M 190 180 L 245 180" stroke="#7fd99a" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <circle cx="245" cy="180" r="3" fill="#7fd99a"/>
+
+  <!-- Core Monolith Box -->
+  <rect x="245" y="90" width="310" height="330" rx="12" fill="#12161b" stroke="#2b343d" stroke-width="1.5"/>
+  <rect x="245" y="90" width="310" height="38" rx="12" fill="#181d24"/>
+  <text x="265" y="114" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700">NestJS Modular Monolith</text>
+  <text x="475" y="114" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="9">K8s StatefulSets</text>
+
+  <!-- Core Modules -->
+  <g transform="translate(260, 140)">
+    <rect x="0" y="0" width="130" height="42" rx="6" fill="#181e25" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="12" y="20" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">Order Domain</text>
+    <text x="12" y="34" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="8">9-Stage Finite State</text>
+
+    <rect x="145" y="0" width="130" height="42" rx="6" fill="#181e25" stroke="rgba(255,255,255,0.08)"/>
+    <text x="157" y="20" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">WebSocket GW</text>
+    <text x="157" y="34" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="8">Real-time GPS/Chat</text>
+
+    <rect x="0" y="55" width="130" height="42" rx="6" fill="#181e25" stroke="rgba(255,255,255,0.08)"/>
+    <text x="12" y="75" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">Payment &amp; Escrow</text>
+    <text x="12" y="89" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="8">Idempotent Keys</text>
+
+    <rect x="145" y="55" width="130" height="42" rx="6" fill="#181e25" stroke="rgba(255,255,255,0.08)"/>
+    <text x="157" y="75" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">Catalog Engine</text>
+    <text x="157" y="89" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="8">Prisma 49 Models</text>
+
+    <rect x="0" y="110" width="130" height="42" rx="6" fill="#181e25" stroke="rgba(255,255,255,0.08)"/>
+    <text x="12" y="130" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">Dispatch Queue</text>
+    <text x="12" y="144" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="8">BullMQ Priority</text>
+
+    <rect x="145" y="110" width="130" height="42" rx="6" fill="#181e25" stroke="rgba(255,255,255,0.08)"/>
+    <text x="157" y="130" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">Auth / RBAC</text>
+    <text x="157" y="144" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="8">Multi-tenant JWT</text>
+
+    <rect x="0" y="165" width="275" height="42" rx="6" fill="#161c22" stroke="rgba(255,255,255,0.08)"/>
+    <text x="15" y="185" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">PgBouncer Connection Pooling</text>
+    <text x="15" y="199" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="8">HPA Autoscaling · 0-Downtime Rolling Deploys</text>
+  </g>
+
+  <!-- Storage & Cache Layer -->
+  <g transform="translate(585, 100)">
+    <rect x="0" y="0" width="180" height="100" rx="10" fill="#13171d" stroke="#334155"/>
+    <text x="15" y="28" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">PostgreSQL</text>
+    <text x="15" y="48" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">49 Domain Models</text>
+    <rect x="15" y="60" width="150" height="24" rx="4" fill="#1e293b"/>
+    <text x="90" y="76" text-anchor="middle" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="9">StatefulSet Master/Replica</text>
+
+    <rect x="0" y="125" width="180" height="100" rx="10" fill="#13171d" stroke="#334155"/>
+    <text x="15" y="153" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">Redis &amp; BullMQ</text>
+    <text x="15" y="173" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">Live Dispatch &amp; Pub/Sub</text>
+    <rect x="15" y="185" width="150" height="24" rx="4" fill="#1e293b"/>
+    <text x="90" y="201" text-anchor="middle" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="9">In-Memory Clustering</text>
+  </g>
+
+  <path d="M 555 195 L 585 150" stroke="#38bdf8" stroke-width="1.5"/>
+  <path d="M 555 275 L 585 230" stroke="#f43f5e" stroke-width="1.5"/>
+
+  <!-- Footer -->
+  <rect x="25" y="440" width="750" height="38" rx="6" fill="#111418" stroke="rgba(255,255,255,0.06)"/>
+  <text x="45" y="464" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">STACK: NestJS · TypeScript · PostgreSQL · Prisma · Redis · BullMQ · WebSocket · Docker · Kubernetes</text>
+</svg>

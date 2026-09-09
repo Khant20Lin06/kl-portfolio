@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#0d0f12"/>
+  
+  <!-- Header -->
+  <rect x="25" y="25" width="750" height="45" rx="8" fill="#13171d" stroke="#1f252d"/>
+  <text x="45" y="52" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700">NEEYRAPI RBAC PERMISSION MATRIX · HIERARCHICAL ACCESS CONTROL</text>
+  <rect x="655" y="35" width="100" height="24" rx="12" fill="rgba(127,217,154,0.15)"/>
+  <text x="705" y="51" text-anchor="middle" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="10">CUSTOM SCOPES</text>
+
+  <!-- Table Matrix -->
+  <g transform="translate(25, 90)">
+    <!-- Table Header -->
+    <rect x="0" y="0" width="750" height="40" rx="6" fill="#171d24" stroke="#252d37"/>
+    <text x="25" y="25" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">RESOURCE / ACTION</text>
+    <text x="240" y="25" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">SUPERADMIN</text>
+    <text x="380" y="25" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">MODERATOR</text>
+    <text x="510" y="25" fill="#a78bfa" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">BUSINESS OWNER</text>
+    <text x="650" y="25" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">USER / GUEST</text>
+
+    <!-- Row 1 -->
+    <rect x="0" y="48" width="750" height="40" rx="4" fill="#12161c"/>
+    <text x="25" y="73" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="11">Create Business Listing</text>
+    <text x="260" y="73" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="12">✓</text>
+    <text x="400" y="73" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="12">✓</text>
+    <text x="540" y="73" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="12">✓ (Own)</text>
+    <text x="660" y="73" fill="#ef4444" font-family="'JetBrains Mono', monospace" font-size="12">✕</text>
+
+    <!-- Row 2 -->
+    <rect x="0" y="94" width="750" height="40" rx="4" fill="#12161c"/>
+    <text x="25" y="119" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="11">Verify / Approve Listings</text>
+    <text x="260" y="119" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="12">✓</text>
+    <text x="400" y="119" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="12">✓</text>
+    <text x="540" y="119" fill="#ef4444" font-family="'JetBrains Mono', monospace" font-size="12">✕</text>
+    <text x="660" y="119" fill="#ef4444" font-family="'JetBrains Mono', monospace" font-size="12">✕</text>
+
+    <!-- Row 3 -->
+    <rect x="0" y="140" width="750" height="40" rx="4" fill="#12161c"/>
+    <text x="25" y="165" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="11">Launch Ad Campaign Bid</text>
+    <text x="260" y="165" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="12">✓</text>
+    <text x="400" y="165" fill="#ef4444" font-family="'JetBrains Mono', monospace" font-size="12">✕</text>
+    <text x="540" y="165" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="12">✓ (Own)</text>
+    <text x="660" y="165" fill="#ef4444" font-family="'JetBrains Mono', monospace" font-size="12">✕</text>
+
+    <!-- Row 4 -->
+    <rect x="0" y="186" width="750" height="40" rx="4" fill="#12161c"/>
+    <text x="25" y="211" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="11">Post Reviews &amp; Ratings</text>
+    <text x="260" y="211" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="12">✓</text>
+    <text x="400" y="211" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="12">✓</text>
+    <text x="540" y="211" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="12">✓</text>
+    <text x="660" y="211" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="12">✓</text>
+
+    <!-- Row 5 -->
+    <rect x="0" y="232" width="750" height="40" rx="4" fill="#12161c"/>
+    <text x="25" y="257" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="11">Moderate &amp; Purge Spam</text>
+    <text x="260" y="257" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="12">✓</text>
+    <text x="400" y="257" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="12">✓</text>
+    <text x="540" y="257" fill="#ef4444" font-family="'JetBrains Mono', monospace" font-size="12">✕</text>
+    <text x="660" y="257" fill="#ef4444" font-family="'JetBrains Mono', monospace" font-size="12">✕</text>
+
+    <!-- Row 6 -->
+    <rect x="0" y="278" width="750" height="40" rx="4" fill="#12161c"/>
+    <text x="25" y="303" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="11">View Revenue &amp; CTR Analytics</text>
+    <text x="260" y="303" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="12">✓ (All)</text>
+    <text x="400" y="303" fill="#ef4444" font-family="'JetBrains Mono', monospace" font-size="12">✕</text>
+    <text x="540" y="303" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="12">✓ (Own Store)</text>
+    <text x="660" y="303" fill="#ef4444" font-family="'JetBrains Mono', monospace" font-size="12">✕</text>
+  </g>
+
+  <rect x="25" y="440" width="750" height="38" rx="6" fill="#111418" stroke="rgba(255,255,255,0.06)"/>
+  <text x="45" y="464" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">ENFORCEMENT: DRF custom permission classes (IsSuperAdmin, IsModeratorOrReadOnly, IsListingOwner)</text>
+</svg>

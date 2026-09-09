@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="gridTrack" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#0d1013"/>
+  <rect width="800" height="500" fill="url(#gridTrack)"/>
+
+  <!-- Top bar -->
+  <rect x="25" y="20" width="750" height="42" rx="8" fill="#14181c" stroke="rgba(255,255,255,0.08)"/>
+  <circle cx="48" cy="41" r="5" fill="#22c55e"/>
+  <text x="65" y="45" fill="#f1f5f9" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">LIVE WEBSOCKET ORDER DISPATCH · ORDER #WT-94281</text>
+  <rect x="625" y="29" width="135" height="24" rx="12" fill="rgba(34,197,94,0.15)" stroke="#22c55e" stroke-width="0.8"/>
+  <text x="692" y="45" text-anchor="middle" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">● 60 FPS SYNC</text>
+
+  <!-- 9-Stage Progress Tracker -->
+  <rect x="25" y="75" width="750" height="65" rx="10" fill="#121519" stroke="#222830"/>
+  <text x="45" y="98" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">9-STAGE FINITE STATE MACHINE (FSM)</text>
+  
+  <!-- Steps -->
+  <g transform="translate(45, 110)">
+    <circle cx="10" cy="12" r="8" fill="#22c55e"/>
+    <text x="10" y="16" text-anchor="middle" fill="#000" font-size="9" font-weight="bold">✓</text>
+    <line x1="22" y1="12" x2="80" y2="12" stroke="#22c55e" stroke-width="2"/>
+    
+    <circle cx="92" cy="12" r="8" fill="#22c55e"/>
+    <text x="92" y="16" text-anchor="middle" fill="#000" font-size="9" font-weight="bold">✓</text>
+    <line x1="104" y1="12" x2="162" y2="12" stroke="#22c55e" stroke-width="2"/>
+
+    <circle cx="174" cy="12" r="8" fill="#22c55e"/>
+    <text x="174" y="16" text-anchor="middle" fill="#000" font-size="9" font-weight="bold">✓</text>
+    <line x1="186" y1="12" x2="244" y2="12" stroke="#22c55e" stroke-width="2"/>
+
+    <circle cx="256" cy="12" r="8" fill="#38bdf8"/>
+    <circle cx="256" cy="12" r="12" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <line x1="272" y1="12" x2="330" y2="12" stroke="#334155" stroke-width="2"/>
+
+    <circle cx="342" cy="12" r="8" fill="#1e293b"/>
+    <line x1="354" y1="12" x2="412" y2="12" stroke="#334155" stroke-width="2"/>
+
+    <circle cx="424" cy="12" r="8" fill="#1e293b"/>
+    <line x1="436" y1="12" x2="494" y2="12" stroke="#334155" stroke-width="2"/>
+
+    <circle cx="506" cy="12" r="8" fill="#1e293b"/>
+    <line x1="518" y1="12" x2="576" y2="12" stroke="#334155" stroke-width="2"/>
+
+    <circle cx="588" cy="12" r="8" fill="#1e293b"/>
+    <line x1="600" y1="12" x2="658" y2="12" stroke="#334155" stroke-width="2"/>
+
+    <circle cx="670" cy="12" r="8" fill="#1e293b"/>
+  </g>
+
+  <!-- Left: Live Map / Telemetry Preview -->
+  <rect x="25" y="155" width="460" height="320" rx="10" fill="#11151a" stroke="#222930"/>
+  <!-- Map Roads -->
+  <path d="M 40 220 Q 200 180 320 280 T 470 360" fill="none" stroke="#1e293b" stroke-width="12"/>
+  <path d="M 120 450 Q 220 300 280 180 T 460 200" fill="none" stroke="#1e293b" stroke-width="8"/>
+  <path d="M 180 200 L 320 280" fill="none" stroke="#38bdf8" stroke-width="3" stroke-dasharray="5,5"/>
+  
+  <!-- Merchant Pin -->
+  <circle cx="180" cy="200" r="14" fill="#3b82f6" fill-opacity="0.3"/>
+  <circle cx="180" cy="200" r="7" fill="#3b82f6"/>
+  <text x="180" y="228" text-anchor="middle" fill="#93c5fd" font-family="'JetBrains Mono', monospace" font-size="9">Merchant (Pick-up)</text>
+
+  <!-- Rider Pin -->
+  <circle cx="270" cy="250" r="16" fill="#22c55e" fill-opacity="0.35"/>
+  <circle cx="270" cy="250" r="8" fill="#22c55e"/>
+  <text x="270" y="280" text-anchor="middle" fill="#86efac" font-family="'JetBrains Mono', monospace" font-size="9">Rider #14 (En Route)</text>
+
+  <!-- Destination Pin -->
+  <circle cx="360" cy="310" r="14" fill="#f43f5e" fill-opacity="0.3"/>
+  <circle cx="360" cy="310" r="7" fill="#f43f5e"/>
+  <text x="360" y="338" text-anchor="middle" fill="#fda4af" font-family="'JetBrains Mono', monospace" font-size="9">Customer Drop-off</text>
+
+  <!-- Right: Telemetry & Live Chat Feed -->
+  <rect x="500" y="155" width="275" height="320" rx="10" fill="#111418" stroke="#222830"/>
+  <rect x="500" y="155" width="275" height="36" rx="10" fill="#171b21"/>
+  <text x="515" y="178" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">Socket Gateway Events</text>
+
+  <g transform="translate(515, 205)">
+    <rect x="0" y="0" width="245" height="48" rx="6" fill="#161b20" stroke="rgba(255,255,255,0.05)"/>
+    <text x="10" y="18" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9">[ORDER_DISPATCHED]</text>
+    <text x="10" y="35" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="8">Assigned Courier: John D. (ETA 12m)</text>
+
+    <rect x="0" y="58" width="245" height="48" rx="6" fill="#161b20" stroke="rgba(255,255,255,0.05)"/>
+    <text x="10" y="76" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="9">[GPS_TELEMETRY_BEACON]</text>
+    <text x="10" y="93" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="8">Lat: 13.7563, Lng: 100.5018 (Speed 34km/h)</text>
+
+    <rect x="0" y="116" width="245" height="48" rx="6" fill="#161b20" stroke="rgba(255,255,255,0.05)"/>
+    <text x="10" y="134" fill="#a78bfa" font-family="'JetBrains Mono', monospace" font-size="9">[WS_MULTI_PARTY_CHAT]</text>
+    <text x="10" y="151" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="8">"Food is packaged and ready at counter."</text>
+
+    <rect x="0" y="174" width="245" height="75" rx="6" fill="#161b20" stroke="rgba(255,255,255,0.05)"/>
+    <text x="10" y="194" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">Order Subtotal: $38.50</text>
+    <text x="10" y="212" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="8">Status: Rider Arrived at Restaurant</text>
+    <text x="10" y="230" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="8">PgBouncer connection latency: 1.2ms</text>
+  </g>
+</svg>

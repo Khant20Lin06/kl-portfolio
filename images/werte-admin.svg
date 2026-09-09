@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#0d0f12"/>
+  
+  <!-- Left Sidebar -->
+  <rect x="0" y="0" width="180" height="500" fill="#121519" stroke="#1f242b"/>
+  <text x="25" y="40" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">WerTe Admin</text>
+  <text x="25" y="58" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="9">14-SCREEN SUITE</text>
+
+  <g transform="translate(15, 85)">
+    <rect x="0" y="0" width="150" height="30" rx="6" fill="rgba(127,217,154,0.12)" stroke="#7fd99a" stroke-width="0.8"/>
+    <text x="12" y="19" fill="#7fd99a" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="600">📊 Live Analytics</text>
+
+    <text x="12" y="55" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11">🛵 Courier Fleet</text>
+    <text x="12" y="85" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11">🏪 Restaurants</text>
+    <text x="12" y="115" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11">📦 Live Dispatch</text>
+    <text x="12" y="145" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11">💰 Escrow Payouts</text>
+    <text x="12" y="175" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11">🗺️ Geofencing Zones</text>
+    <text x="12" y="205" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11">🛡️ RBAC &amp; Audit Logs</text>
+    <text x="12" y="235" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="11">⚙️ K8s Cluster Health</text>
+  </g>
+
+  <!-- Top bar -->
+  <rect x="180" y="0" width="620" height="50" fill="#13171c" stroke="#1f242b"/>
+  <text x="205" y="30" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600">Platform Operations &amp; Real-time Metrics</text>
+  <circle cx="750" cy="25" r="14" fill="#1e293b"/>
+  <text x="750" y="29" text-anchor="middle" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="10">KL</text>
+
+  <!-- Metrics Grid -->
+  <g transform="translate(205, 70)">
+    <rect x="0" y="0" width="130" height="70" rx="8" fill="#14181e" stroke="#222832"/>
+    <text x="12" y="24" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">ACTIVE ORDERS</text>
+    <text x="12" y="52" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">1,429</text>
+
+    <rect x="145" y="0" width="130" height="70" rx="8" fill="#14181e" stroke="#222832"/>
+    <text x="12" y="24" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">ONLINE COURIERS</text>
+    <text x="12" y="52" fill="#7fd99a" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">348</text>
+
+    <rect x="290" y="0" width="130" height="70" rx="8" fill="#14181e" stroke="#222832"/>
+    <text x="12" y="24" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">AVG DELIVERY TIME</text>
+    <text x="12" y="52" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">18.2m</text>
+
+    <rect x="435" y="0" width="135" height="70" rx="8" fill="#14181e" stroke="#222832"/>
+    <text x="12" y="24" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">GMV TODAY</text>
+    <text x="12" y="52" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">$42,910</text>
+  </g>
+
+  <!-- Big Chart -->
+  <rect x="205" y="160" width="380" height="180" rx="8" fill="#14181e" stroke="#222832"/>
+  <text x="220" y="185" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="600">Throughput &amp; WebSocket Ingress (req/sec)</text>
+  <!-- Chart waveform -->
+  <path d="M 220 310 Q 260 250 300 280 T 360 230 T 420 250 T 480 200 T 560 220" fill="none" stroke="#7fd99a" stroke-width="2.5"/>
+  <path d="M 220 310 Q 260 250 300 280 T 360 230 T 420 250 T 480 200 T 560 220 L 560 320 L 220 320 Z" fill="rgba(127,217,154,0.06)"/>
+
+  <!-- Right: Cluster status -->
+  <rect x="600" y="160" width="175" height="180" rx="8" fill="#14181e" stroke="#222832"/>
+  <text x="615" y="185" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="600">K8s Nodes (HPA)</text>
+  <g transform="translate(615, 205)">
+    <text x="0" y="10" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">Node-1 (Master): 99.9%</text>
+    <rect x="0" y="16" width="145" height="4" rx="2" fill="#22c55e"/>
+
+    <text x="0" y="38" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">Node-2 (Worker): 64%</text>
+    <rect x="0" y="44" width="145" height="4" rx="2" fill="#38bdf8"/>
+
+    <text x="0" y="66" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">Redis BullMQ: Healthy</text>
+    <rect x="0" y="72" width="145" height="4" rx="2" fill="#22c55e"/>
+
+    <text x="0" y="94" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">PgBouncer: 40/120 Pool</text>
+    <rect x="0" y="100" width="145" height="4" rx="2" fill="#7fd99a"/>
+  </g>
+
+  <!-- Live Orders Table -->
+  <rect x="205" y="355" width="570" height="120" rx="8" fill="#14181e" stroke="#222832"/>
+  <text x="220" y="380" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="600">Recent Dispatched Orders (Live Stream)</text>
+  <text x="220" y="405" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9">WT-94289  ·  $54.20  ·  Rider: Alex K.  ·  Burger &amp; Shake  ·  [In Transit]</text>
+  <text x="220" y="425" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9">WT-94288  ·  $18.00  ·  Rider: Somchai  ·  Pizza Hut  ·  [Picked Up]</text>
+  <text x="220" y="445" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9">WT-94287  ·  $82.50  ·  Rider: David B.  ·  Sushi Tei  ·  [Delivered]</text>
+</svg>

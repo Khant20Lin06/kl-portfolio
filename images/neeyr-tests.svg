@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#0c0e11"/>
+  
+  <!-- Terminal Header -->
+  <rect x="25" y="25" width="750" height="42" rx="8" fill="#14181c" stroke="rgba(255,255,255,0.08)"/>
+  <circle cx="48" cy="46" r="4" fill="#ff5f56"/>
+  <circle cx="62" cy="46" r="4" fill="#ffbd2e"/>
+  <circle cx="76" cy="46" r="4" fill="#27c93f"/>
+  <text x="100" y="50" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="11">bash - pytest --cov=. --cov-report=term-missing (105 Tests)</text>
+  <rect x="640" y="34" width="120" height="24" rx="12" fill="rgba(39,201,63,0.15)"/>
+  <text x="700" y="50" text-anchor="middle" fill="#27c93f" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">105 PASSED</text>
+
+  <!-- Terminal Body -->
+  <rect x="25" y="80" width="750" height="395" rx="8" fill="#101317" stroke="#1f252d"/>
+  <g transform="translate(45, 110)">
+    <text x="0" y="0" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="11">$ pytest tests/ -v</text>
+    <text x="0" y="20" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">platform win32 -- Python 3.11.8, pytest-8.1.1, pluggy-1.4.0</text>
+    <text x="0" y="38" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">django: settings: neeyrapi.settings (test database)</text>
+
+    <!-- Test execution lines -->
+    <text x="0" y="70" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="10">tests/test_auth_jwt.py::test_obtain_token_pair</text>
+    <text x="650" y="70" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="10">PASSED [  8%]</text>
+
+    <text x="0" y="90" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="10">tests/test_auth_jwt.py::test_revoked_token_blacklisted</text>
+    <text x="650" y="90" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="10">PASSED [ 16%]</text>
+
+    <text x="0" y="110" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="10">tests/test_rbac_permissions.py::test_moderator_cannot_alter_escrow</text>
+    <text x="650" y="110" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="10">PASSED [ 28%]</text>
+
+    <text x="0" y="130" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="10">tests/test_directory.py::test_geo_radius_search_haversine</text>
+    <text x="650" y="130" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="10">PASSED [ 42%]</text>
+
+    <text x="0" y="150" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="10">tests/test_ads_bidding.py::test_concurrent_bid_placement_atomic</text>
+    <text x="650" y="150" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="10">PASSED [ 64%]</text>
+
+    <text x="0" y="170" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="10">tests/test_reviews.py::test_spam_repetition_filter_triggered</text>
+    <text x="650" y="170" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="10">PASSED [ 85%]</text>
+
+    <text x="0" y="190" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="10">tests/test_openapi_spec.py::test_spectacular_contract_parity</text>
+    <text x="650" y="190" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="10">PASSED [100%]</text>
+
+    <!-- Coverage Report Table -->
+    <rect x="0" y="215" width="710" height="120" rx="6" fill="#15191f" stroke="#252c36"/>
+    <text x="15" y="235" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="10">Name                     Stmts   Miss  Cover   Missing</text>
+    <text x="15" y="250" fill="#475569" font-family="'JetBrains Mono', monospace" font-size="10">--------------------------------------------------------</text>
+    <text x="15" y="268" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="10">apps/core_auth/views.py    142      0   100%</text>
+    <text x="15" y="286" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="10">apps/directory/models.py   280      2    99%   L140-141</text>
+    <text x="15" y="304" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="10">apps/ads/services.py       194      4    98%   L82-85</text>
+    <text x="15" y="322" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="10">TOTAL                      982      8    99.2%</text>
+
+    <!-- Success Result -->
+    <text x="0" y="355" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">======= 105 passed, 0 failed in 1.48s (100% automated coverage) =======</text>
+  </g>
+</svg>
