@@ -733,6 +733,50 @@
             border-radius: 999px;
         }
 
+        .project-links {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .project-link-btn {
+            font-size: 0.78rem;
+            padding: 0.5rem 1.15rem;
+            border-radius: 999px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            transition: all 0.25s ease;
+        }
+
+        .project-link-btn.primary {
+            background: #7fd99a;
+            color: #0a0b0c;
+            font-weight: 600;
+            box-shadow: 0 2px 10px rgba(127, 217, 154, 0.2);
+        }
+
+        .project-link-btn.primary:hover {
+            background: #9cf0b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(127, 217, 154, 0.35);
+        }
+
+        .project-link-btn.ghost {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            color: #eceae6;
+        }
+
+        .project-link-btn.ghost:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.35);
+            transform: translateY(-2px);
+        }
+
         .visuals {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1517,16 +1561,29 @@
                     <div class="project-card-inner">
                         <div class="shell project-grid">
                             <div>
-                                <div class="meta mono">FULL STACK ENGINEER (LEAD) · MULTI-VENDOR MARKETPLACE</div>
-                                <h3>Eco Market</h3>
-                                <p>A full-stack marketplace built end to end — an RBAC/JWT-secured NestJS
-                                    backend and a React/Next.js frontend, with real-time buyer-seller messaging
-                                    and an analytics dashboard for sellers.</p>
+                                <div class="meta mono">FULL STACK ENGINEER · HIGH-CONCURRENCY TICKETING PLATFORM</div>
+                                <h3>AURA</h3>
+                                <p>An enterprise-grade, distributed event ticketing and seat reservation
+                                    platform built to handle extreme traffic (1M+ concurrent requests) with
+                                    zero double-booking. Engineered with NestJS, Redis distributed atomic locking (SET NX PX) to
+                                    eliminate race conditions, BullMQ background queues for 5-minute reservation
+                                    TTL &amp; auto-release, PgBouncer for horizontal database pooling, WebSocket
+                                    real-time seat sync, and an Angular 19 glassmorphism interactive seat dome.</p>
                                 <div class="tags">
-                                    <span>NestJS</span><span>Next.js</span><span>PostgreSQL</span><span>Socket.io</span><span>JWT</span><span>RBAC</span>
+                                    <span>NestJS</span><span>Angular 19</span><span>Redis (Atomic Locks)</span><span>BullMQ</span><span>PostgreSQL</span><span>PgBouncer</span><span>WebSockets</span><span>Kubernetes</span><span>Docker</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://event-ticket-rust-nu.vercel.app/" target="_blank" rel="noopener" class="project-link-btn primary mono">
+                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                        <span>Live Demo</span>
+                                    </a>
+                                    <a href="https://github.com/Khant20Lin06/Event-Ticket" target="_blank" rel="noopener" class="project-link-btn ghost mono">
+                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                        <span>GitHub</span>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="showcase-container project-showcase" id="ecoMarketShowcase">
+                            <div class="showcase-container project-showcase" id="auraShowcase">
                                 <div class="mockup-header">
                                     <div class="mockup-dots">
                                         <span class="dot red"></span>
@@ -1535,7 +1592,7 @@
                                     </div>
                                     <div class="mockup-url mono">
                                         <span class="lock-icon">🔒</span>
-                                        <span class="url-text">ecomarket.dev/products</span>
+                                        <span class="url-text">aura.events/matrix-25th/seats</span>
                                     </div>
                                     <button class="expand-btn mono" title="Click to view full image"
                                         aria-label="Expand image">
@@ -1549,41 +1606,41 @@
                                 </div>
 
                                 <div class="mockup-screen" title="Click to enlarge">
-                                    <img src="./images/eco-market-ui.svg" alt="Eco Market - Storefront UI"
+                                    <img src="./images/aura-seatmap.png" alt="AURA - Interactive Dome Seat Reservation Map"
                                         class="showcase-img" />
                                     <div class="screen-overlay-badge mono">
-                                        Marketplace UI · Buyer-Facing Storefront
+                                        Seat Selection · Interactive Curved Dome Sightlines &amp; Atomic Locks
                                     </div>
                                 </div>
 
                                 <div class="showcase-tabs" role="tablist">
-                                    <button class="tab-item active" data-src="./images/eco-market-ui.svg"
-                                        data-url="ecomarket.dev/products"
-                                        data-badge="Marketplace UI · Buyer-Facing Storefront" role="tab"
+                                    <button class="tab-item active" data-src="./images/aura-seatmap.png"
+                                        data-url="aura.events/matrix-25th/seats"
+                                        data-badge="Seat Selection · Interactive Curved Dome Sightlines &amp; Atomic Locks" role="tab"
                                         aria-selected="true">
-                                        <span class="tab-label">Marketplace UI</span>
-                                        <span class="tab-sub mono">Storefront</span>
+                                        <span class="tab-label">Seat Map</span>
+                                        <span class="tab-sub mono">Curved Dome</span>
                                     </button>
-                                    <button class="tab-item" data-src="./images/eco-messaging.svg"
-                                        data-url="ecomarket.dev/messages/live"
-                                        data-badge="Messaging Feature · Real-time Socket.io Chat" role="tab"
+                                    <button class="tab-item" data-src="./images/aura-console.png"
+                                        data-url="admin.aura.live/operations/matrix"
+                                        data-badge="Enterprise Operations · Real-Time Seat Matrix &amp; 100% Double-Booking Guards" role="tab"
                                         aria-selected="false">
-                                        <span class="tab-label">Messaging</span>
-                                        <span class="tab-sub mono">Socket.io Live</span>
+                                        <span class="tab-label">Admin Console</span>
+                                        <span class="tab-sub mono">Seat Matrix</span>
                                     </button>
-                                    <button class="tab-item" data-src="./images/eco-analytics.svg"
-                                        data-url="seller.ecomarket.dev/dashboard"
-                                        data-badge="Seller Analytics · Revenue &amp; Inventory Hub" role="tab"
+                                    <button class="tab-item" data-src="./images/aura-traffic.png"
+                                        data-url="ops.aura.live/telemetry/traffic-limiter"
+                                        data-badge="Telemetry Radar · Virtual Queue Admission Limiter &amp; Redis Latency" role="tab"
                                         aria-selected="false">
-                                        <span class="tab-label">Analytics</span>
-                                        <span class="tab-sub mono">Seller Hub</span>
+                                        <span class="tab-label">Traffic Limiter</span>
+                                        <span class="tab-sub mono">Queue &amp; Telemetry</span>
                                     </button>
-                                    <button class="tab-item" data-src="./images/eco-rbac.svg"
-                                        data-url="api.ecomarket.dev/auth/rbac"
-                                        data-badge="RBAC &amp; JWT · Multi-Role Guards Security" role="tab"
+                                    <button class="tab-item" data-src="./images/aura-events.png"
+                                        data-url="aura.events/premiere/spotlight"
+                                        data-badge="Premiere Spotlight · Real-time Auditorium Velocity &amp; 4K Dolby Drops" role="tab"
                                         aria-selected="false">
-                                        <span class="tab-label">RBAC / Auth</span>
-                                        <span class="tab-sub mono">JWT Security</span>
+                                        <span class="tab-label">Premiere Catalog</span>
+                                        <span class="tab-sub mono">Live Velocity</span>
                                     </button>
                                 </div>
                             </div>
