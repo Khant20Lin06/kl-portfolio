@@ -1949,11 +1949,18 @@
                     const lines = new THREE.LineSegments(lineGeo, lineMat);
                     scene.add(lines);
 
-                    let mouseX = 0, mouseY = 0;
-                    window.addEventListener('pointermove', (e) => {
-                        mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
-                        mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
-                    }, { passive: true });
+                    let targetMouseX = 0, targetMouseY = 0;
+                    let currentMouseX = 0, currentMouseY = 0;
+
+                    function handlePointer(e) {
+                        const clientX = e.clientX !== undefined ? e.clientX : (e.touches && e.touches[0] ? e.touches[0].clientX : window.innerWidth / 2);
+                        const clientY = e.clientY !== undefined ? e.clientY : (e.touches && e.touches[0] ? e.touches[0].clientY : window.innerHeight / 2);
+                        targetMouseX = (clientX / window.innerWidth - 0.5) * 2;
+                        targetMouseY = (clientY / window.innerHeight - 0.5) * 2;
+                    }
+                    window.addEventListener('pointermove', handlePointer, { passive: true });
+                    window.addEventListener('mousemove', handlePointer, { passive: true });
+                    window.addEventListener('touchmove', handlePointer, { passive: true });
 
                     function onResize() {
                         if (!heroSection) return;
@@ -1973,14 +1980,28 @@
 
                     function animate() {
                         requestAnimationFrame(animate);
-                        if (!prefersReducedMotion) {
-                            nodes.rotation.y += 0.0012;
-                            lines.rotation.y += 0.0012;
-                            nodes.rotation.x += (mouseY * 0.15 - nodes.rotation.x) * 0.02;
-                            lines.rotation.x = nodes.rotation.x;
-                            camera.position.x += (mouseX * 0.6 - camera.position.x) * 0.02;
-                            camera.lookAt(scene.position);
-                        }
+
+                        // Smooth interpolation towards mouse position
+                        currentMouseX += (targetMouseX - currentMouseX) * 0.055;
+                        currentMouseY += (targetMouseY - currentMouseY) * 0.055;
+
+                        // Continuous elegant auto-rotation
+                        nodes.rotation.y += 0.0032;
+                        lines.rotation.y = nodes.rotation.y;
+
+                        // Responsive mouse tilt & sway on sphere
+                        nodes.rotation.x = currentMouseY * 0.45;
+                        lines.rotation.x = currentMouseY * 0.45;
+
+                        // Additional dynamic rotation influence from mouse X
+                        nodes.rotation.y += currentMouseX * 0.005;
+                        lines.rotation.y = nodes.rotation.y;
+
+                        // 3D camera parallax perspective follow
+                        camera.position.x = currentMouseX * 2.2;
+                        camera.position.y = -currentMouseY * 1.5;
+                        camera.lookAt(scene.position);
+
                         renderer.render(scene, camera);
                     }
                     animate();
@@ -1995,32 +2016,54 @@
                 if (!ctx) return;
                 let w = canvas.width = window.innerWidth;
                 let h = canvas.height = window.innerHeight;
-                const pts = Array.from({ length: 50 }, () => ({
+                let mX = w / 2, mY = h / 2;
+
+                function onPointer2D(e) {
+                    mX = e.clientX !== undefined ? e.clientX : mX;
+                    mY = e.clientY !== undefined ? e.clientY : mY;
+                }
+                window.addEventListener('pointermove', onPointer2D, { passive: true });
+                window.addEventListener('mousemove', onPointer2D, { passive: true });
+
+                const pts = Array.from({ length: 55 }, () => ({
                     x: Math.random() * w,
                     y: Math.random() * h,
-                    vx: (Math.random() - 0.5) * 0.5,
-                    vy: (Math.random() - 0.5) * 0.5,
-                    r: Math.random() * 2 + 1.5
+                    vx: (Math.random() - 0.5) * 0.75,
+                    vy: (Math.random() - 0.5) * 0.75,
+                    r: Math.random() * 2.2 + 1.6
                 }));
+
                 function draw() {
                     ctx.clearRect(0, 0, w, h);
                     for (let i = 0; i < pts.length; i++) {
                         const p = pts[i];
-                        if (!prefersReducedMotion) {
-                            p.x += p.vx;
-                            p.y += p.vy;
-                            if (p.x < 0 || p.x > w) p.vx *= -1;
-                            if (p.y < 0 || p.y > h) p.vy *= -1;
+                        p.x += p.vx;
+                        p.y += p.vy;
+
+                        // Interactive cursor deflection in 2D fallback
+                        const dx = p.x - mX;
+                        const dy = p.y - mY;
+                        const dMouse = Math.hypot(dx, dy);
+                        if (dMouse < 160) {
+                            p.x += (dx / (dMouse || 1)) * 1.5;
+                            p.y += (dy / (dMouse || 1)) * 1.5;
                         }
+
+                        if (p.x < 0) p.x = w;
+                        if (p.x > w) p.x = 0;
+                        if (p.y < 0) p.y = h;
+                        if (p.y > h) p.y = 0;
+
                         ctx.beginPath();
                         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
                         ctx.fillStyle = '#7fd99a';
                         ctx.fill();
+
                         for (let j = i + 1; j < pts.length; j++) {
                             const p2 = pts[j];
                             const d = Math.hypot(p.x - p2.x, p.y - p2.y);
-                            if (d < 120) {
-                                ctx.strokeStyle = `rgba(127, 217, 154, ${0.22 * (1 - d / 120)})`;
+                            if (d < 130) {
+                                ctx.strokeStyle = `rgba(127, 217, 154, ${0.25 * (1 - d / 130)})`;
                                 ctx.beginPath();
                                 ctx.moveTo(p.x, p.y);
                                 ctx.lineTo(p2.x, p2.y);
