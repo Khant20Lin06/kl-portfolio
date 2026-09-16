@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#0d0f12"/>
+  
+  <!-- Header -->
+  <rect x="25" y="25" width="750" height="50" rx="8" fill="#13171d" stroke="#1f252d"/>
+  <text x="45" y="55" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">Vendor Storefront Analytics &amp; Inventory Hub</text>
+  <rect x="635" y="36" width="120" height="26" rx="6" fill="#181e26" stroke="rgba(255,255,255,0.08)"/>
+  <text x="695" y="53" text-anchor="middle" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="10">STORE: EcoGoods</text>
+
+  <!-- Metric Cards -->
+  <g transform="translate(25, 95)">
+    <rect x="0" y="0" width="170" height="85" rx="8" fill="#13171d" stroke="#222832"/>
+    <text x="15" y="28" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">MONTHLY REVENUE</text>
+    <text x="15" y="60" fill="#7fd99a" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="700">$18,420</text>
+    <text x="15" y="76" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="9">↑ +24.8% vs last month</text>
+
+    <rect x="190" y="0" width="170" height="85" rx="8" fill="#13171d" stroke="#222832"/>
+    <text x="205" y="28" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">TOTAL ORDERS</text>
+    <text x="205" y="60" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="700">894</text>
+    <text x="205" y="76" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9">Avg. Order Value: $20.60</text>
+
+    <rect x="380" y="0" width="170" height="85" rx="8" fill="#13171d" stroke="#222832"/>
+    <text x="395" y="28" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">ACTIVE LISTINGS</text>
+    <text x="395" y="60" fill="#a78bfa" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="700">42 SKUs</text>
+    <text x="395" y="76" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">3 low-stock warnings</text>
+
+    <rect x="570" y="0" width="180" height="85" rx="8" fill="#13171d" stroke="#222832"/>
+    <text x="585" y="28" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">CONVERSION RATE</text>
+    <text x="585" y="60" fill="#f59e0b" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="700">4.82%</text>
+    <text x="585" y="76" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="9">Industry benchmark 2.4%</text>
+  </g>
+
+  <!-- Big Revenue Chart -->
+  <rect x="25" y="200" width="460" height="265" rx="8" fill="#13171d" stroke="#222832"/>
+  <text x="45" y="230" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="600">Daily Sales Volume (Past 30 Days)</text>
+  
+  <!-- Chart Bars -->
+  <g transform="translate(45, 260)">
+    <rect x="0" y="100" width="14" height="60" rx="3" fill="#1e293b"/>
+    <rect x="22" y="80" width="14" height="80" rx="3" fill="#1e293b"/>
+    <rect x="44" y="60" width="14" height="100" rx="3" fill="#1e293b"/>
+    <rect x="66" y="90" width="14" height="70" rx="3" fill="#1e293b"/>
+    <rect x="88" y="40" width="14" height="120" rx="3" fill="#38bdf8"/>
+    <rect x="110" y="50" width="14" height="110" rx="3" fill="#1e293b"/>
+    <rect x="132" y="30" width="14" height="130" rx="3" fill="#7fd99a"/>
+    <rect x="154" y="70" width="14" height="90" rx="3" fill="#1e293b"/>
+    <rect x="176" y="20" width="14" height="140" rx="3" fill="#7fd99a"/>
+    <rect x="198" y="55" width="14" height="105" rx="3" fill="#1e293b"/>
+    <rect x="220" y="35" width="14" height="125" rx="3" fill="#38bdf8"/>
+    <rect x="242" y="15" width="14" height="145" rx="3" fill="#7fd99a"/>
+    <rect x="264" y="45" width="14" height="115" rx="3" fill="#1e293b"/>
+    <rect x="286" y="10" width="14" height="150" rx="3" fill="#7fd99a"/>
+    <rect x="308" y="25" width="14" height="135" rx="3" fill="#7fd99a"/>
+    <rect x="330" y="40" width="14" height="120" rx="3" fill="#38bdf8"/>
+    <rect x="352" y="18" width="14" height="142" rx="3" fill="#7fd99a"/>
+    <rect x="374" y="5" width="14" height="155" rx="3" fill="#7fd99a"/>
+  </g>
+
+  <!-- Best Sellers Table -->
+  <rect x="505" y="200" width="270" height="265" rx="8" fill="#13171d" stroke="#222832"/>
+  <text x="525" y="230" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="600">Top Performing Items</text>
+  <g transform="translate(525, 255)">
+    <text x="0" y="15" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="11">1. Bamboo Fiber Cup</text>
+    <text x="0" y="30" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="9">312 sold · $5,772 revenue</text>
+
+    <text x="0" y="60" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="11">2. Organic Hemp Tote</text>
+    <text x="0" y="75" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="9">194 sold · $4,850 revenue</text>
+
+    <text x="0" y="105" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="11">3. Beeswax Food Wraps</text>
+    <text x="0" y="120" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="9">148 sold · $2,220 revenue</text>
+
+    <text x="0" y="150" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="11">4. Stainless Bento Box</text>
+    <text x="0" y="165" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="9">110 sold · $2,750 revenue</text>
+  </g>
+</svg>

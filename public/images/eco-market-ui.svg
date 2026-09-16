@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#0b0d10"/>
+  
+  <!-- Header Bar -->
+  <rect x="0" y="0" width="800" height="55" fill="#12161b" stroke="#1f252d"/>
+  <text x="30" y="34" fill="#7fd99a" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">EcoMarket</text>
+  <rect x="150" y="12" width="320" height="32" rx="16" fill="#181e25" stroke="#252d37"/>
+  <text x="175" y="32" fill="#64748b" font-family="'Space Grotesk', sans-serif" font-size="11">🔍 Search organic produce, eco-friendly crafts...</text>
+  
+  <text x="560" y="33" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="12">Categories</text>
+  <text x="640" y="33" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="12">Vendors</text>
+  <rect x="710" y="12" width="65" height="32" rx="8" fill="#181e25" stroke="rgba(255,255,255,0.08)"/>
+  <text x="742" y="32" text-anchor="middle" fill="#7fd99a" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="600">Cart (3)</text>
+
+  <!-- Banner -->
+  <rect x="30" y="75" width="740" height="110" rx="12" fill="#141a22" stroke="#232d3a"/>
+  <text x="60" y="120" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">Multi-Vendor Sustainable Marketplace</text>
+  <text x="60" y="145" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="12">NestJS Core Backend · Next.js Storefront · Direct Buyer-Seller Escrow</text>
+  <rect x="60" y="155" width="120" height="24" rx="6" fill="#7fd99a"/>
+  <text x="120" y="171" text-anchor="middle" fill="#000" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">EXPLORE SHOPS</text>
+
+  <!-- Product Grid (4 cards) -->
+  <g transform="translate(30, 205)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="170" height="265" rx="10" fill="#12161c" stroke="#202731"/>
+    <rect x="10" y="10" width="150" height="130" rx="8" fill="#171d24"/>
+    <circle cx="85" cy="75" r="32" fill="#7fd99a" fill-opacity="0.15"/>
+    <text x="85" y="82" text-anchor="middle" fill="#7fd99a" font-size="24">🌱</text>
+    <text x="15" y="165" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="600">Bamboo Fiber Cup</text>
+    <text x="15" y="185" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9">Seller: EcoGoods Co.</text>
+    <text x="15" y="215" fill="#7fd99a" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">$18.50</text>
+    <rect x="15" y="228" width="140" height="26" rx="6" fill="#192028"/>
+    <text x="85" y="245" text-anchor="middle" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="10">Add to Cart</text>
+
+    <!-- Card 2 -->
+    <rect x="190" y="0" width="170" height="265" rx="10" fill="#12161c" stroke="#202731"/>
+    <rect x="200" y="10" width="150" height="130" rx="8" fill="#171d24"/>
+    <circle cx="275" cy="75" r="32" fill="#38bdf8" fill-opacity="0.15"/>
+    <text x="275" y="82" text-anchor="middle" fill="#38bdf8" font-size="24">🧴</text>
+    <text x="205" y="165" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="600">Organic Body Scrub</text>
+    <text x="205" y="185" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9">Seller: NatureBloom</text>
+    <text x="205" y="215" fill="#7fd99a" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">$24.00</text>
+    <rect x="205" y="228" width="140" height="26" rx="6" fill="#192028"/>
+    <text x="275" y="245" text-anchor="middle" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="10">Add to Cart</text>
+
+    <!-- Card 3 -->
+    <rect x="380" y="0" width="170" height="265" rx="10" fill="#12161c" stroke="#202731"/>
+    <rect x="390" y="10" width="150" height="130" rx="8" fill="#171d24"/>
+    <circle cx="465" cy="75" r="32" fill="#a78bfa" fill-opacity="0.15"/>
+    <text x="465" y="82" text-anchor="middle" fill="#a78bfa" font-size="24">👜</text>
+    <text x="395" y="165" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="600">Handwoven Tote</text>
+    <text x="395" y="185" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9">Seller: ArtisanLoft</text>
+    <text x="395" y="215" fill="#7fd99a" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">$45.00</text>
+    <rect x="395" y="228" width="140" height="26" rx="6" fill="#192028"/>
+    <text x="465" y="245" text-anchor="middle" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="10">Add to Cart</text>
+
+    <!-- Card 4 -->
+    <rect x="570" y="0" width="170" height="265" rx="10" fill="#12161c" stroke="#202731"/>
+    <rect x="580" y="10" width="150" height="130" rx="8" fill="#171d24"/>
+    <circle cx="655" cy="75" r="32" fill="#f59e0b" fill-opacity="0.15"/>
+    <text x="655" y="82" text-anchor="middle" fill="#f59e0b" font-size="24">🕯️</text>
+    <text x="585" y="165" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="600">Soy Wax Candle</text>
+    <text x="585" y="185" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9">Seller: GlowBotanicals</text>
+    <text x="585" y="215" fill="#7fd99a" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">$16.00</text>
+    <rect x="585" y="228" width="140" height="26" rx="6" fill="#192028"/>
+    <text x="655" y="245" text-anchor="middle" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="10">Add to Cart</text>
+  </g>
+</svg>

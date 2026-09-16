@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#0d0f12"/>
+  
+  <!-- Header -->
+  <rect x="25" y="25" width="750" height="45" rx="8" fill="#13171d" stroke="#1f252d"/>
+  <text x="45" y="53" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">NEEYRAPI · 12-MODULE DJANGO REST ARCHITECTURE</text>
+  <rect x="635" y="36" width="120" height="24" rx="12" fill="rgba(127,217,154,0.15)"/>
+  <text x="695" y="52" text-anchor="middle" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="10">105 TESTS (100%)</text>
+
+  <!-- 12 Modules Grid (3 rows x 4 columns) -->
+  <g transform="translate(35, 90)">
+    <!-- Row 1 -->
+    <rect x="0" y="0" width="170" height="75" rx="8" fill="#13171d" stroke="#222832"/>
+    <text x="15" y="26" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">1. core_auth</text>
+    <text x="15" y="44" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">JWT Auth, Session Revocation, OTP Login</text>
+
+    <rect x="185" y="0" width="170" height="75" rx="8" fill="#13171d" stroke="#222832"/>
+    <text x="200" y="26" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">2. rbac_engine</text>
+    <text x="200" y="44" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Custom Role Heirarchies &amp; Scoped Permissions</text>
+
+    <rect x="370" y="0" width="170" height="75" rx="8" fill="#13171d" stroke="#222832"/>
+    <text x="385" y="26" fill="#a78bfa" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">3. directory</text>
+    <text x="385" y="44" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Business Listings, Geo-Radius, Categorization</text>
+
+    <rect x="555" y="0" width="170" height="75" rx="8" fill="#13171d" stroke="#222832"/>
+    <text x="570" y="26" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">4. ads_manager</text>
+    <text x="570" y="44" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Campaign Bidding, Sponsored Placements</text>
+
+    <!-- Row 2 -->
+    <rect x="0" y="90" width="170" height="75" rx="8" fill="#13171d" stroke="#222832"/>
+    <text x="15" y="116" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">5. review_system</text>
+    <text x="15" y="134" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Verified Ratings, Spam Detection Filter</text>
+
+    <rect x="185" y="90" width="170" height="75" rx="8" fill="#13171d" stroke="#222832"/>
+    <text x="200" y="116" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">6. search_engine</text>
+    <text x="200" y="134" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">PostgreSQL Full-Text Search + Trigram Matching</text>
+
+    <rect x="370" y="90" width="170" height="75" rx="8" fill="#13171d" stroke="#222832"/>
+    <text x="385" y="116" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">7. notifications</text>
+    <text x="385" y="134" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Async Celery Worker + Email/SMS Webhooks</text>
+
+    <rect x="555" y="90" width="170" height="75" rx="8" fill="#13171d" stroke="#222832"/>
+    <text x="570" y="116" fill="#a78bfa" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">8. analytics_hub</text>
+    <text x="570" y="134" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Impression Counters, CTR Tracking</text>
+
+    <!-- Row 3 -->
+    <rect x="0" y="180" width="170" height="75" rx="8" fill="#13171d" stroke="#222832"/>
+    <text x="15" y="206" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">9. media_cdn</text>
+    <text x="15" y="224" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Image compression, signed Cloud URLs</text>
+
+    <rect x="185" y="180" width="170" height="75" rx="8" fill="#13171d" stroke="#222832"/>
+    <text x="200" y="206" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">10. moderation</text>
+    <text x="200" y="224" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Admin review queue, content flagged status</text>
+
+    <rect x="370" y="180" width="170" height="75" rx="8" fill="#13171d" stroke="#222832"/>
+    <text x="385" y="206" fill="#7fd99a" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">11. billing_plans</text>
+    <text x="385" y="224" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">Subscription tiers, invoice generation</text>
+
+    <rect x="555" y="180" width="170" height="75" rx="8" fill="#13171d" stroke="#222832"/>
+    <text x="570" y="206" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">12. api_gateway</text>
+    <text x="570" y="224" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="10">drf-spectacular OpenAPI 3.0 Schema Contract</text>
+  </g>
+
+  <!-- Bottom DB & Stack pill -->
+  <rect x="35" y="375" width="725" height="70" rx="8" fill="#111418" stroke="#202630"/>
+  <text x="55" y="405" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="600">Database &amp; Caching Engine</text>
+  <text x="55" y="425" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">PostgreSQL (Trigram Index, Partitioned Log Tables) · Redis Cache (Query Invalidation) · Celery Task Workers</text>
+</svg>
