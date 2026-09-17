@@ -61,10 +61,10 @@ const p2Active = ref(0)
 
 // Project 3: AURA
 const p3Tabs: TabInfo[] = [
-  { src: '/images/aura-traffic.png', url: 'event-ticket-rust-nu.vercel.app/events', badge: 'Traffic Limiter · 1M+ Peak Concurrency Management', label: 'Virtual Queue', sub: '1M+ Users' },
-  { src: '/images/aura-seatmap.png', url: 'event-ticket-rust-nu.vercel.app/events/matrix', badge: 'Atomic Locks · Real-time Seat Matrix & Zero Double-Booking', label: 'Seat Matrix', sub: 'Redis SET NX PX' },
-  { src: '/images/aura-events.png', url: 'event-ticket-rust-nu.vercel.app/events/pipeline', badge: 'Queue Engine · BullMQ 5-Min TTL & Auto-Release', label: 'TTL Queues', sub: 'BullMQ Pipeline' },
-  { src: '/images/aura-console.png', url: 'github.com/Khant20Lin06/Event-Ticket', badge: 'Connection Pool · PgBouncer & WebSocket Mesh', label: 'Data Topology', sub: 'PgBouncer / WS' },
+  { src: '/images/01-now-showing-catalog.png', url: 'event-ticket-rust-nu.vercel.app/events', badge: 'Live Discovery · Premier Screenings & Spotlight Showcase', label: 'Live Catalog', sub: 'Spotlight & Events' },
+  { src: '/images/02-digital-arena-passes.png', url: 'event-ticket-rust-nu.vercel.app/passes', badge: 'Digital Arena Passes · Live QR Admission & Fan Verification', label: 'Arena Passes', sub: 'QR Fan Passes' },
+  { src: '/images/03-seat-inventory-matrix.png', url: 'event-ticket-rust-nu.vercel.app/events/matrix', badge: 'Atomic Locks · Real-time Seat Matrix & Zero Double-Booking', label: 'Seat Matrix', sub: 'Redis SET NX PX' },
+  { src: '/images/04-events-ticketing-hub.png', url: 'event-ticket-rust-nu.vercel.app/events/admin', badge: 'Operator Hub · Screening Pipeline & Capacity Controls', label: 'Ingress Hub', sub: 'Capacity Controls' },
 ]
 const p3Active = ref(0)
 
