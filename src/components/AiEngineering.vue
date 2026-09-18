@@ -14,12 +14,12 @@
         <div style="flex: 1; min-width: 300px;">
           <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">AI Systems I Build</h3>
           <ul style="list-style: none; color: #9a9d9f; font-size: 0.95rem; line-height: 1.8;">
-            <li>✓ AI Business Assistant</li>
+            <li>✓ Multi-Agent Architectures (Supervisor Pattern)</li>
+            <li>✓ Model Context Protocol (MCP) Integrations</li>
+            <li>✓ Deterministic AI Tool-calling &amp; Guardrails</li>
             <li>✓ RAG-based Knowledge Systems</li>
-            <li>✓ LLM API Integration</li>
             <li>✓ AI Agents &amp; Telegram AI Bots</li>
-            <li>✓ Workflow Automation</li>
-            <li>✓ Database-aware AI</li>
+            <li>✓ Workflow Automation (n8n)</li>
           </ul>
         </div>
         <div
@@ -27,13 +27,13 @@
         >
           <div><span class="mono" style="color: #e63946; font-size: 0.85rem; letter-spacing: 0.05em;">USER</span></div>
           <div style="padding-left: 1rem; color: rgba(255,255,255,0.2);">↓</div>
-          <div><span class="mono" style="color: #eceae6; font-size: 0.85rem; letter-spacing: 0.05em;">AI ASSISTANT</span></div>
+          <div><span class="mono" style="color: #eceae6; font-size: 0.85rem; letter-spacing: 0.05em;">AI SUPERVISOR</span></div>
           <div style="padding-left: 1rem; color: rgba(255,255,255,0.2);">↓</div>
-          <div><span class="mono" style="color: #eceae6; font-size: 0.85rem; letter-spacing: 0.05em;">LLM &amp; RAG</span></div>
+          <div><span class="mono" style="color: #eceae6; font-size: 0.85rem; letter-spacing: 0.05em;">DOMAIN AGENTS</span></div>
           <div style="padding-left: 1rem; color: rgba(255,255,255,0.2);">↓</div>
-          <div><span class="mono" style="color: #eceae6; font-size: 0.85rem; letter-spacing: 0.05em;">VECTOR SEARCH</span></div>
+          <div><span class="mono" style="color: #eceae6; font-size: 0.85rem; letter-spacing: 0.05em;">MCP &amp; TOOLS</span></div>
           <div style="padding-left: 1rem; color: rgba(255,255,255,0.2);">↓</div>
-          <div><span class="mono" style="color: #e63946; font-size: 0.85rem; letter-spacing: 0.05em;">BUSINESS DATA</span></div>
+          <div><span class="mono" style="color: #e63946; font-size: 0.85rem; letter-spacing: 0.05em;">ERP DATA</span></div>
         </div>
       </div>
     </div>

@@ -43,10 +43,11 @@ onUnmounted(() => {
 
 // Project 1: Fashion ERP
 const p1Tabs: TabInfo[] = [
-  { src: '/images/pos-dashboard.png', url: 'fashion-erp.vercel.app', badge: 'Mobile POS · Offline-First SQLite Sync', label: 'Mobile POS', sub: 'Offline + Sync' },
-  { src: '/images/module-map.png', url: 'fashion-erp.vercel.app/architecture', badge: 'Architecture · 25 Business Domain Modules', label: 'Domain Map', sub: '25 Modules' },
-  { src: '/images/ai-assistant.png', url: 'fashion-erp.vercel.app/copilot', badge: 'ERP Copilot · Natural-Language Inventory Queries', label: 'AI Assistant', sub: 'ERP Copilot' },
-  { src: '/images/api-docs.png', url: 'github.com/Khant20Lin06/erp-fashion-api', badge: 'API Contract · Enterprise REST & Swagger Docs', label: 'API Contract', sub: 'REST / OpenAPI' },
+  { src: '/images/fashion-erp-pos.png', url: 'fashion-erp.vercel.app/pos', badge: 'Point of Sale · Smart Checkout System', label: 'Smart POS', sub: 'Integrated POS' },
+  { src: '/images/fashion-erp-dashboard.png', url: 'fashion-erp.vercel.app/dashboard', badge: 'Analytics · Data-Driven Insights', label: 'Dashboard', sub: 'Sales Analytics' },
+  { src: '/images/fashion-erp-ai.png', url: 'fashion-erp.vercel.app/copilot', badge: 'ERP Copilot · Natural-Language Queries', label: 'AI Assistant', sub: 'ERP Copilot' },
+  { src: '/images/fashion-erp-bot-mockup.jpg', url: 't.me/fashion_erp_bot', badge: 'Order Bot · Automated Customer Support', label: 'Order Bot', sub: 'Telegram Bot' },
+  { src: '/images/fashion-erp-bot-mockup.jpg', url: 'fashion-erp.vercel.app/agents', badge: 'Supervisor · Intelligent Intent Routing', label: 'AI Supervisor', sub: 'Multi-Agent Flow' },
 ]
 const p1Active = ref(0)
 
@@ -61,10 +62,10 @@ const p2Active = ref(0)
 
 // Project 3: AURA
 const p3Tabs: TabInfo[] = [
-  { src: '/images/01-now-showing-catalog.png', url: 'event-ticket-rust-nu.vercel.app/events', badge: 'Live Discovery · Premier Screenings & Spotlight Showcase', label: 'Live Catalog', sub: 'Spotlight & Events' },
-  { src: '/images/02-digital-arena-passes.png', url: 'event-ticket-rust-nu.vercel.app/passes', badge: 'Digital Arena Passes · Live QR Admission & Fan Verification', label: 'Arena Passes', sub: 'QR Fan Passes' },
-  { src: '/images/03-seat-inventory-matrix.png', url: 'event-ticket-rust-nu.vercel.app/events/matrix', badge: 'Atomic Locks · Real-time Seat Matrix & Zero Double-Booking', label: 'Seat Matrix', sub: 'Redis SET NX PX' },
-  { src: '/images/04-events-ticketing-hub.png', url: 'event-ticket-rust-nu.vercel.app/events/admin', badge: 'Operator Hub · Screening Pipeline & Capacity Controls', label: 'Ingress Hub', sub: 'Capacity Controls' },
+  { src: '/images/aura-mockup-1.jpg', url: 'event-ticket-rust-nu.vercel.app/events', badge: 'Live Discovery · Premier Screenings & Spotlight Showcase', label: 'Live Catalog', sub: 'Spotlight & Events' },
+  { src: '/images/aura-mockup-2.jpg', url: 'event-ticket-rust-nu.vercel.app/passes', badge: 'Digital Arena Passes · Live QR Admission & Fan Verification', label: 'Arena Passes', sub: 'QR Fan Passes' },
+  { src: '/images/aura-mockup-3.jpg', url: 'event-ticket-rust-nu.vercel.app/events/matrix', badge: 'Atomic Locks · Real-time Seat Matrix & Zero Double-Booking', label: 'Seat Matrix', sub: 'Redis SET NX PX' },
+  { src: '/images/aura-mockup-4.jpg', url: 'event-ticket-rust-nu.vercel.app/events/admin', badge: 'Operator Hub · Screening Pipeline & Capacity Controls', label: 'Ingress Hub', sub: 'Capacity Controls' },
 ]
 const p3Active = ref(0)
 
@@ -104,13 +105,13 @@ const p4Active = ref(0)
                   <strong>Solution:</strong> Designed and built an enterprise-grade ERP system from scratch with mobile POS and AI-assisted operational queries.
                 </p>
                 <p style="margin-bottom: 0.8rem;">
-                  <strong>Architecture:</strong> Next.js · Flutter · NestJS · PostgreSQL · Redis · Qdrant · Ollama · Docker
+                  <strong>Architecture:</strong> Next.js · Flutter · NestJS · PostgreSQL · Redis · Qdrant · n8n · Kafka
                 </p>
                 <p>
-                  <strong>Result:</strong> Centralized inventory across stores, sub-second POS checkout, offline-first sync, and natural-language ERP copilot for business queries.
+                  <strong>Result:</strong> Built a scalable Multi-Agent AI architecture with a Supervisor Pattern for intent routing, deterministic tool-calling (Zod), and n8n/MCP automated workflows.
                 </p>
                 <div class="tags">
-                  <span>NestJS</span><span>Flutter</span><span>Next.js</span><span>PostgreSQL</span><span>Redis</span><span>Qdrant</span><span>Ollama</span><span>Docker</span>
+                  <span>NestJS</span><span>Flutter</span><span>Next.js</span><span>PostgreSQL</span><span>Redis</span><span>Kafka</span><span>n8n</span><span>MCP</span>
                 </div>
                 <div class="project-actions" style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
                   <a href="https://fashion-erp.vercel.app/" target="_blank" rel="noopener" class="project-link-btn primary">
