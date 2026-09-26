@@ -41,6 +41,46 @@ onUnmounted(() => {
   document.body.style.overflow = ''
 })
 
+// Project: DOT POS & Retail Subscription Suite
+const dotPosTabs: TabInfo[] = [
+  {
+    src: '/images/dot-pos-checkout.jpg',
+    url: 'dot-pos-web.vercel.app/pos',
+    badge: 'Touch POS Terminal · Barcode Scanning & Instant Checkout',
+    label: 'Smart POS',
+    sub: 'Touch Terminal',
+  },
+  {
+    src: '/images/dot-pos-dashboard.jpg',
+    url: 'dot-pos-web.vercel.app/dashboard',
+    badge: 'Enterprise Dashboard · Sales Trends & Inventory Valuation',
+    label: 'Analytics',
+    sub: 'Real-time KPIs',
+  },
+  {
+    src: '/images/dot-pos-dual.jpg',
+    url: 'dot-pos-web.vercel.app/mobile',
+    badge: 'Dual Mobile Suite · Touch Catalog & RBAC Security Matrix',
+    label: 'Mobile Suite',
+    sub: 'Dual-Device Flow',
+  },
+  {
+    src: '/images/dot-pos-mobile.jpg',
+    url: 'dot-pos-web.vercel.app/catalog',
+    badge: 'Product Catalog · Multi-UOM, Packaging & Variants Engine',
+    label: 'Catalog',
+    sub: 'Variants & UOM',
+  },
+  {
+    src: '/images/dot-pos-rbac.jpg',
+    url: 'dot-pos-web.vercel.app/roles',
+    badge: 'Staff Access Control · Granular Business Module Permissions',
+    label: 'RBAC Security',
+    sub: 'Permission Matrix',
+  },
+]
+const dotPosActive = ref(0)
+
 // Project 1: Fashion ERP
 const p1Tabs: TabInfo[] = [
   { src: '/images/fashion-erp-pos.png', url: 'fashion-erp.vercel.app/pos', badge: 'Point of Sale · Smart Checkout System', label: 'Smart POS', sub: 'Integrated POS' },
@@ -91,6 +131,94 @@ const p4Active = ref(0)
       </div>
 
       <div class="project-stack">
+        <!-- Project: DOT POS -->
+        <article class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="shell project-grid">
+              <div>
+                <div class="meta mono">FULL STACK &amp; MOBILE ARCHITECT · RETAIL &amp; SUBSCRIPTION PLATFORM</div>
+                <h3>DOT POS — Mobile POS &amp; Enterprise Retail Platform</h3>
+                <p style="margin-bottom: 0.8rem;">
+                  <strong>Problem:</strong> Retail and F&amp;B businesses in emerging markets face spotty network connectivity, manual inventory reconciliation errors, and lack of affordable offline-first POS systems with multi-device licensing.
+                </p>
+                <p style="margin-bottom: 0.8rem;">
+                  <strong>Solution:</strong> Engineered an enterprise-grade, offline-first mobile and desktop POS application with reactive local SQLite database, dynamic promotion rules engine, automated debt tracking, and bidirectional cloud sync.
+                </p>
+                <p style="margin-bottom: 0.8rem;">
+                  <strong>Architecture:</strong> Flutter · Dart · Riverpod · Drift (SQLite) · Next.js · NestJS · PostgreSQL · Vercel
+                </p>
+                <p>
+                  <strong>Result:</strong> 100% offline operational resilience with zero downtime, instant barcode scanning, multi-UOM inventory, invoice-linked return workflows, and tiered SaaS subscription licensing (Free vs. Pro).
+                </p>
+                <div class="tags">
+                  <span>Flutter</span><span>Dart</span><span>Riverpod</span><span>Drift (SQLite)</span><span>Offline-First</span><span>Next.js</span><span>NestJS</span><span>PostgreSQL</span><span>Vercel</span>
+                </div>
+                <div class="project-actions" style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                  <a href="https://dot-pos-web.vercel.app/" target="_blank" rel="noopener" class="project-link-btn primary">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    <span>Live Demo</span>
+                  </a>
+                  <a href="https://github.com/Khant20Lin06/Mobile-POS-Subscription-App" target="_blank" rel="noopener" class="project-link-btn ghost">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>View GitHub</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Showcase -->
+              <div class="showcase-container project-showcase">
+                <div class="mockup-bar">
+                  <div class="mockup-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                  </div>
+                  <div class="mockup-url mono">
+                    <span class="lock-icon">🔒</span>
+                    <span class="url-text">{{ dotPosTabs[dotPosActive].url }}</span>
+                  </div>
+                  <button
+                    class="expand-btn"
+                    title="Expand image"
+                    @click="openLightbox(dotPosTabs[dotPosActive].src, dotPosTabs[dotPosActive].badge)"
+                  >
+                    <span>⤢</span> Expand
+                  </button>
+                </div>
+
+                <div
+                  class="mockup-screen"
+                  @click="openLightbox(dotPosTabs[dotPosActive].src, dotPosTabs[dotPosActive].badge)"
+                >
+                  <img
+                    :src="dotPosTabs[dotPosActive].src"
+                    :alt="dotPosTabs[dotPosActive].badge"
+                    class="showcase-img"
+                  />
+                  <div class="screen-overlay-badge mono">
+                    {{ dotPosTabs[dotPosActive].badge }}
+                  </div>
+                </div>
+
+                <div class="showcase-tabs" role="tablist">
+                  <button
+                    v-for="(tab, idx) in dotPosTabs"
+                    :key="tab.label"
+                    class="tab-item"
+                    :class="{ active: dotPosActive === idx }"
+                    role="tab"
+                    :aria-selected="dotPosActive === idx"
+                    @click="dotPosActive = idx"
+                  >
+                    <span class="tab-label">{{ tab.label }}</span>
+                    <span class="tab-sub mono">{{ tab.sub }}</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
         <!-- Project 1: Fashion ERP -->
         <article class="project-card reveal">
           <div class="project-card-inner">
